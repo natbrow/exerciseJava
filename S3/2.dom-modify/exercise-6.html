@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="exercise-6.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+        let list = document.createElement('ul');
+        for (let i = 0; i < apps.length; i++) {
+            let listLi = document.createElement('li');
+            const app = apps[i];
+            listLi.textContent = app;
+
+            list.appendChild(listLi);
+        }
+        document.body.appendChild(list);
+
+
+    </script>
+
+</body>
+
+</html>
